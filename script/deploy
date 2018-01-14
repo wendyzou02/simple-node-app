@@ -1,0 +1,9 @@
+#!/bin/sh
+ 
+ssh ubuntu@34.216.50.32 <<EOF
+  cd ~/demo
+  git pull
+  npm install --production
+  forever restartall
+  exit
+EOF
