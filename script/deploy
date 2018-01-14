@@ -4,6 +4,7 @@ ssh ubuntu@34.216.50.32 <<EOF
   cd ~/demo/simple-node-app
   git pull
   npm install --production
-  forever restartall
+  forever stopall
+  forever start app.js
   exit
 EOF
